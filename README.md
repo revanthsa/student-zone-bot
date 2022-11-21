@@ -1,5 +1,16 @@
-# Telegram Bot - PSGTECH Student Zone
+# Telegram Bot for PSGTECH Student Zone
 Simple Telegram Bot to fetch student's Attandance, CA marks and Semester results from [PSGTech](https://ecampus.psgtech.ac.in/studzone2/) website.
+
+#Index
+1. [Specifications](#Specifications)
+2. [Usage](#usage)
+    - [Steps to deploy on Heroku](#steps-to-deploy-on-heroku)
+    - [Structure of config.json](#structure-of-configjson)
+3. [Commands](#commands)
+4. [Screenshots](#screenshots)
+5. [License](#license)
+6. [Contributing](#contributing)
+
 
 ## Specifications
 - The bot is hosted on [Heroku](https://www.heroku.com/) and uses Python Telegram Bot API to interact with Telegram.
@@ -25,7 +36,7 @@ Simple Telegram Bot to fetch student's Attandance, CA marks and Semester results
 6. Also, Add the config.json file as an environment variable in Heroku.
     - Name of the variable: CONFIG
     - Value of the variable: The contents of the config.json file
-7. Start the bot and use it
+7. Start the bot and use it.
 
 #### Structure of config.json
 ```json
@@ -48,15 +59,14 @@ Simple Telegram Bot to fetch student's Attandance, CA marks and Semester results
 
 ## Commands
 1. `/start` - Start the bot
-2. `rollno` - Enter your roll number to get the attendance, CA marks and semester exam results
+2. `rollno` - Enter the roll number to get the attendance, CA marks and semester exam results
 
-<!-- images of working -->
 ## Screenshots
 Send `/start` command to check if the bot is working.
-![Screenshot 1](./images/screenshot1.jpg)
+<img src="./images/screenshot1.jpg" alt="start_cmd" width="272" height="480">
 
 If the bot works try sending your `rollno` to get the details.
-![Screenshot 2](./images/screenshot2.jpg)
+<img src="./images/screenshot2.jpg" alt="start_cmd" width="272" height="480">
 
 ## License
 The code is free to use and modify. The code is licensed under [MIT License](https://choosealicense.com/licenses/mit/).
