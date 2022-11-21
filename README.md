@@ -62,11 +62,9 @@ Simple Telegram Bot to fetch student's Attandance, CA marks and Semester results
 2. `rollno` - Enter the roll number to get the attendance, CA marks and semester exam results
 
 ## Screenshots
-Send `/start` command to check if the bot is working.
-<img src="./images/screenshot1.jpg" alt="start_cmd" width="272" height="480">
+<img src="./images/screenshot1.jpg" alt="start_cmd" width="272" height="480"> Send `/start` command to check if the bot is working.
 
-If the bot works try sending your `rollno` to get the details.
-<img src="./images/screenshot2.jpg" alt="start_cmd" width="272" height="480">
+<img src="./images/screenshot2.jpg" alt="start_cmd" width="272" height="480"> If the bot works try sending your `rollno` to get the details.
 
 ## License
 The code is free to use and modify. The code is licensed under [MIT License](https://choosealicense.com/licenses/mit/).
