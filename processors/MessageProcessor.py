@@ -6,8 +6,16 @@ import cloudinary
 import cloudinary.uploader
 from webdriver_manager.chrome import ChromeDriverManager
 
-with open('config.json') as json_file:
-    config = json.load(json_file)
+# heroku config
+import environ
+env = environ.Env()
+environ.Env.read_env()
+json_file = env('CONFIG')
+config = json.loads(json_file)
+
+# Local config
+# with open('config.json') as json_file:
+#     config = json.load(json_file)
 
 cloudinary.config(
     cloud_name = config["cloudinary"]["cloud_name"],

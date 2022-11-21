@@ -2,9 +2,16 @@ from telegram.ext import Updater, Filters, CommandHandler, MessageHandler
 import json
 from handlers.StartHandeler import start
 from handlers.FetchHandeler import text
+# heroku config
+import environ
+env = environ.Env()
+environ.Env.read_env()
+json_file = env('CONFIG')
+config = json.loads(json_file)
 
-with open('config.json') as json_file:
-    config = json.load(json_file)
+# Local config
+# with open('config.json') as json_file:
+#     config = json.load(json_file)
 token = config["token"]
 allowedUsers = config["allowedusers"]
 

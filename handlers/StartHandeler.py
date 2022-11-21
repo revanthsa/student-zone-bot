@@ -1,7 +1,15 @@
 import json
 from telegram.ext.dispatcher import run_async
-with open('config.json') as json_file:
-    config = json.load(json_file)
+# heroku config
+import environ
+env = environ.Env()
+environ.Env.read_env()
+json_file = env('CONFIG')
+config = json.loads(json_file)
+
+# Local config
+# with open('config.json') as json_file:
+#     config = json.load(json_file)
 
 allowedUsers = config["allowedusers"]
 roll_no = config["student_credentials"].keys()
